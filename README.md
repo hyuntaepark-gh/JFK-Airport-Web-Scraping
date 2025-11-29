@@ -1,49 +1,50 @@
-# ✈️ JFK Airport Web Scraping & Analysis
+# ✈️ JFK Airport Flight Data Analysis
 
-Python project for scraping publicly available data related to JFK Airport and analyzing flight activity and customer reviews using `pandas`, `numpy`, and `matplotlib`.
-
-The goal is to build a small end-to-end data pipeline:
-
-1. **Collect** data from the web (e.g., airport review pages).
-2. **Load & clean** CSV-based flight datasets.
-3. **Merge & transform** the data into an analysis-ready format.
-4. **Visualize** patterns in reviews and flight delays/traffic.
-
-This repository is designed as a portfolio project to demonstrate skills in web scraping, data wrangling, and exploratory data analysis in Python.
+This project analyzes flight performance and delay patterns at **JFK Airport** using Python and Jupyter Notebook.  
+The goal is to explore how flight delays vary by month, airline, and other factors, and to practice real-world data analysis and visualization.
 
 ---
 
-## 📦 Tech Stack
+## 🔍 Project Overview
 
-- **Language:** Python 3.x  
-- **Libraries:**
-  - `requests` – HTTP requests for web pages  
-  - `beautifulsoup4` – HTML parsing and scraping  
-  - `pandas` – data frames, cleaning, aggregation  
-  - `numpy` – numerical operations  
-  - `matplotlib` – data visualization  
+- **Objective**  
+  - Understand delay patterns at JFK Airport  
+  - Identify which airlines or periods have relatively higher delays  
+  - Practice data cleaning, aggregation, and visualization with Python
 
-All dependencies are listed in `requirements.txt`.
+- **Key Questions**
+  - How do delays change over time (by month or day)?
+  - Are some airlines more prone to delays than others?
+  - Are there noticeable trends or seasonal patterns?
+
+- **Tech Stack**
+  - **Language:** Python  
+  - **Environment:** Jupyter Notebook  
+  - **Libraries:** pandas, numpy, matplotlib (and others if needed)
 
 ---
 
-## 📁 Project Structure (planned)
+## 📁 Project Structure
 
 ```bash
-jfk-airport-web-scraping/
+jfk-airport-analysis/
 │
-├── README.md                  # Project overview (this file)
-├── requirements.txt           # Python dependencies
+├─ README.md                  # Project description (this file)
+├─ notebooks/
+│    └─ jfk_analysis.ipynb    # Main Jupyter Notebook
 │
-├── src/                       # Python source code
-│   ├── scrape_reviews.py      # Web scraping logic for airport reviews
-│   ├── load_flights_data.py   # Utilities to load and clean flight data
-│   └── merge_and_analyze.py   # Data merging and basic analysis helpers
+├─ data/
+│    ├─ raw/                  # Original/raw data files
+│    └─ clean/                # Cleaned / processed data
 │
-├── data/                      # Raw and processed data (CSV files)
-│   ├── jfk_reviews_raw.csv    # Scraped review data (output from scrape_reviews.py)
-│   ├── jfk_flights_raw.csv    # Original flight dataset(s)
-│   └── jfk_flights_merged.csv # Combined / cleaned dataset
+├─ src/
+│    ├─ data_cleaning.py      # (Optional) Data cleaning scripts
+│    ├─ aggregation.py        # (Optional) Grouping/aggregation logic
+│    └─ visualization.py      # (Optional) Plot/visualization functions
 │
-└── notebooks/
-    └── jfk_analysis.ipynb     # Exploratory analysis & visualizations
+├─ images/
+│    ├─ monthly_flights.png   # Example: monthly flights chart
+│    ├─ airline_delay.png     # Example: airline delay comparison
+│    └─ ...
+│
+└─ requirements.txt           # Python dependencies
