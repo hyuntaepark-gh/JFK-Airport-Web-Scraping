@@ -59,9 +59,10 @@ The goal is to understand how flight delays vary by **time, airline, and season*
 
 ---
 
-## 📁 Project Structure
+## 🗂️ Repository Structure
 
-```bash
+```
+
 jfk-airport-analysis/
 │
 ├─ README.md                  # Project description (this file)
@@ -83,3 +84,5 @@ jfk-airport-analysis/
 │    └─ ...
 │
 └─ requirements.txt           # Python dependencies
+
+```
